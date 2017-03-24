@@ -1,0 +1,249 @@
+<html><head>
+
+    
+                                       
+	
+	<style>
+	        body {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #333;
+	background-color: #fff;
+	font-size:100%;
+	}
+
+
+h1 {
+	font-size: 120%;
+	line-height: 1.5em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+h2 {
+	font-size: 100%;
+	line-height: 1.4em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+h3 {
+	font-size: 90%;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	}    
+h4 {
+font-size: 80%;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 0;
+	}    
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color:  #003366;
+	outline: none;
+	}
+a:visited {
+	color:  #003366;
+	}
+a:active {
+	color:  #003366;
+	}
+a:hover {
+	color:#990000;
+	text-decoration: underline;
+	}
+strong, b {
+	font-weight: bold;
+	}
+p {
+	line-height: 1.2em;
+	margin-top: 5px;
+	margin-bottom: 10px; 
+	font-size:80%;
+	}
+	</style>
+
+	
+
+
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Welcome to Beginning PHP 5 and MySQL E-Commerce!</title></head><body>
+
+<h1><font face="Tahoma"><font size="4">Welcome to</font><br>
+Beginning PHP 5 and MySQL E-Commerce!</font></h1>
+<p><i><font face="Arial">[ Updated July 31, 2006 ]</font></i></p>
+<h4><font face="Arial"><b>Dear Reader</b>,</font></h4>
+<p><font face="Arial">Welcome to <i>Beginning PHP 5 and MySQL 
+E-Commerce: From Novice to Professional</i>! We really hope you'll enjoy reading this book, and that it will 
+effectively help you build your own websites with PHP 5 and MySQL! Find more 
+details about the book at <a href="http://www.cristiandarie.ro/">
+http://www.cristiandarie.ro</a> (where you can also register to the newsletter 
+to be notified about any important book updates, errata updates, etc), and at
+<a href="http://www.apress.com/book/bookDisplay.html?bID=356">
+http://www.apress.com/book/bookDisplay.html?bID=356</a>.</font></p>
+<p><b><font face="Arial">About the Errata</font></b></p>
+<p><font face="Arial">This errata file has been updated on June 07, 2005. 
+However, some of the errata entries have been already corrected in recent 
+book reprints. We're always happy to receive your feedback (even if it's 
+about the errata :-), and we almost always respond to it, even if sometimes it can take 
+a while, due to tight deadlines and other time constraints. Please note the book 
+is written for PHP 5, and the code won't work as it is, on PHP 4. Please check 
+this detail before submitting bug reports or errata, as it's been the cause of 
+some confusion in the past. </font></p>
+<p><b><font face="Arial">Note About the Code Download</font></b></p>
+<p><font face="Arial">This errata entries haven't been corrected in the code 
+download as well, yet. </font></p>
+<p><b><font face="Arial">Special Thanks</font></b></p>
+<p><font face="Arial">We always appreciate the effort readers put into helping 
+us improve and market the book. Many thanks go to <b>Peter Michaux</b>, <b>Thomas Albrecht 
+</b>and <b>Jamie McDaniel </b>for submitting many of the errata entries, and to 
+our readers that were so kind to write online reviews about the book. </font>
+</p>
+<p><font face="Arial">Happy reading, </font></p>
+<p><font face="Arial"><b><a href="http://www.cristiandarie.ro/">Cristian Darie</a>
+</b>and<b> Mihai Bucica</b></font></p>
+<p>&nbsp;</p>
+<p><b><font face="Arial" size="5">Errata</font></b></p>
+<p><font face="Arial"><b>Page 29, 30</b></font></p>
+<p><font face="Arial">Recent versions of Apache have more restrictive default 
+security settings. At Step 2 of both exercises, when adding the aliases, you 
+should also add permission to access the tshirtshop physical folder by modifying
+</font><font face="Courier New" size="2">httpd.conf</font><font face="Arial"> 
+like this:</font></p>
+<p><span style="font-family:&quot;Courier New&quot;"><font size="2">&lt;IfModule 
+alias_module&gt;<br>
+&nbsp; # ...</font></span><b><span style="font-family:&quot;Courier New&quot;"><font size="2"><br>
+&nbsp; Alias /tshirtshop/ &quot;c:/</font></span><span style="font-family: Courier New"><font size="2">tshirtshop</font></span><span style="font-family:&quot;Courier New&quot;"><font size="2">/&quot;<br>
+&nbsp; Alias /</font></span><span style="font-family: Courier New"><font size="2">tshirtshop</font></span><span style="font-family:&quot;Courier New&quot;"><font size="2"> 
+&quot;c:/</font></span><span style="font-family: Courier New"><font size="2">tshirtshop</font></span><span style="font-family:&quot;Courier New&quot;"><font size="2">&quot;</font></span></b><span style="font-family:&quot;Courier New&quot;"><font size="2"><br>
+&lt;/IfModule&gt;</font></span><b><span style="font-family:&quot;Courier New&quot;"><font size="2"><br>
+&lt;Directory &quot;C:/</font></span><span style="font-family: Courier New"><font size="2">tshirtshop</font></span><span style="font-family:&quot;Courier New&quot;"><font size="2">&quot;&gt;<br>
+&nbsp; Allow from all<br>
+&lt;/Directory&gt;</font></span></b></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Page 74, 76 </b>&nbsp;<br>
+Readers who have installed MySQL version 4.1.3 and above will likely be using 
+PHP's improved MySQL extension. In order for the database <br>
+connection to work, step 2 on page 76 (and elsewhere in the book) would need to 
+be changed to:<br>
+&nbsp;<br>
+</font><font style="font-size: 10pt;" face="Courier New">define("MYSQL_CONNECTION_STRING", "mysqli://" . 
+DB_USERNAME . ":" . DB_PASSWORD . "@" . DB_SERVER . "/" . DB_DATABASE); </font></p>
+<h4>&nbsp;</h4>
+<h4><font face="Arial">Page 105<br>
+<span style="font-weight: 400;">The 4th table in Figure 4-14 should be labeled 
+"product" instead of "department"</span></font></h4>
+<h4>&nbsp;</h4>
+<h4><font face="Arial">Page 155<br>
+<span style="font-weight: 400;">The SQL statement (shown below) that creates the 
+FULLTEXT search index is included in the Database\Chapter05 folder of the code 
+download, but it is not included in the complete creation script in 
+Database\Complete. If you use that script (tshirtshop.sql), you still need to 
+execute this statement manually, to ensure the search functionality works as 
+expected:</span></font></h4>
+<p><font face="Courier New" size="2">ALTER TABLE product ADD FULLTEXT 
+NameDescFTIndex(name,description)</font></p>
+<h4>&nbsp;</h4>
+<h4><font face="Arial">Page 175<br>
+<span style="font-weight: 400;">The exercise should also add an "Add to Cart" 
+button to the<br>
+product details page. You need to add the following code (similar to the one<br>
+at Step 3 of the exercise) in </span></font><span style="font-weight: 400;">
+<font face="Verdana">product.tpl</font><font face="Arial">:<br>
+<br>
+</font><font face="Courier New" size="2">&lt;br /&gt;&lt;br /&gt;<br>
+&lt;a href=<br>
+"JavaScript:<br>
+OpenPayPalWindow('https://www.paypal.com/cgi-bin/webscr?cmd=_cart&amp;amp;business=<i>youremail@yourserver.com</i>&amp;amp;item_name=' 
++ escape('{$product-&gt;mProduct.name}') + '&amp;amp;amount={$product-&gt;mProduct.price}&amp;amp;add=1&amp;amp;return=<i>www.yourwebsite.com</i>&amp;amp;cancel_return=<i>www.yourwebsite.com</i>')"&gt;<br>
+&lt;img src="images/add_to_cart.gif" border="0" alt="add to cart"/&gt;</font></span></h4>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Page 231 <br>
+</b>Replace:<br>
+</font><font face="Courier New" size="2">WHERE shopping_cart.cart.id = '$cartId'";</font><font face="Arial"><br>
+with:<br>
+</font><font face="Courier New" size="2">WHERE shopping_cart.cart.id = '$cartId' AND 
+shopping_cart.purchase_when = 'now'";</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Page 235<br>
+</b>A comment in index.php specifies that 432000 seconds means 7 days, but in 
+reality there are 5 days.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Page 259<br>
+</b>EmptyShoppingCart should only clear the shopping cart's "buy now" items. The 
+code should be like this:<br>
+<br>
+</font><font face="Courier New" size="2">// empties visitor's shopping cart<br>
+public function EmptyShoppingCart($cartId)<br>
+{<br>
+&nbsp; $query_string = "DELETE FROM shopping_cart<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+WHERE cart_id='$cartId' <b>AND when_to_buy='NOW'"</b>;<br>
+&nbsp; $this-&gt;dbManager-&gt;DbQuery($query_string);<br>
+}</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>Page 260<br>
+</b>Replace:<br>
+</font><font face="Courier New" size="2">UPDATE ORDERS</font><font face="Arial"><br>
+with:<br>
+</font><font face="Courier New" size="2">UPDATE orders</font><b><font face="Courier New" size="2"><br>
+</font><font face="Arial">
+<br>
+&nbsp;</font></b></p>
+<p><b><font face="Arial">
+Page 344 <br>
+</font>
+</b><font face="Arial">The exercise has a missing step. Find the following code in </font>
+<font face="Verdana">index.php</font><font face="Arial"> (somewhere around line 
+40):<br>
+<br>
+</font><font face="Courier New" size="2">if (!isset($_GET['ProductID']) &amp;&amp; !isset($_GET['CartAction']))
+<br>
+&nbsp; $_SESSION['PageLink'] = "http://" . $_SERVER['SERVER_NAME'] .<br>
+&nbsp;&nbsp;&nbsp; ":" . $_SERVER['SERVER_PORT'] . $_SERVER['REQUEST_URI'];<br>
+</font><font face="Arial">
+<br>
+Change this code with:<br>
+<br>
+</font><font face="Courier New" size="2">if (!isset($_GET['ProductID']) &amp;&amp; !isset($_GET['CartAction']))
+<br>
+&nbsp; $_SESSION['PageLink'] = ($_SERVER['SERVER_PORT'] == '443' ? "https://" : 
+"http://")<br>
+&nbsp;&nbsp;&nbsp; . $_SERVER['SERVER_NAME'] . ":" . $_SERVER['SERVER_PORT'] . 
+$_SERVER['REQUEST_URI'];</font><font face="Verdana"><br>
+</font><font face="Arial"><br>
+&nbsp;</font></p>
+<p><font face="Arial"><b>Page 355<br>
+</b>Replace:<br>
+</font><font face="Courier New" size="2">$total_amount += $order_items[$i]['price'];<br>
+</font><font face="Arial">with:<br>
+</font><font face="Courier New" size="2">$total_amount += $order_items[$i]['price']*$order_items[$i]['quantity'];<br>
+</font><font face="Arial">
+<br>
+&nbsp;</font></p>
+<p><font face="Arial">
+<b>Page 365<br>
+</b>Replace:<br>
+</font><font face="Courier New" size="2">$cps = $this-&gt;GetCurrentPipelineSection();<br>
+$cps-&gt;Process($this);</font><font face="Verdana"><br>
+</font><font face="Arial">with:<br>
+</font><font face="Courier New" size="2">$this-&gt;GetCurrentPipelineSection();<br>
+$this-&gt;mCurrentPipelineSection-&gt;Process($this); <br>
+</font><font face="Arial"><br>
+&nbsp;</font></p>
+<p><font face="Arial"><b>Page 471<br>
+</b>Replace:<br>
+</font><font face="Courier New" size="2">"http://webservices.amazon.com/onca/xml?Service=ECSECommerceService"<br>
+</font><font face="Arial">with:<br>
+</font><font face="Courier New" size="2">"http://webservices.amazon.com/onca/xml?Service=AWSECommerceService"<br>
+&nbsp;</font></p>
+
+<p><a href="http://www.apress.com/book/bookDisplay.html?bID=356">&lt;&lt; Return</a> to book Details.</p>  
+              
+
+</body></html>
